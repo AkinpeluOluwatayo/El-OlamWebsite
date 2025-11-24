@@ -1,0 +1,157 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f4faff;
+    color: #033e6b;
+}
+
+/*header {*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*    padding: 20px;*/
+/*    background: #b7dbff; !* darker blue *!*/
+/*    align-items: center;*/
+/*}*/
+
+/*header .logo {*/
+/*    font-size: 24px;*/
+/*    font-weight: bold;*/
+/*}*/
+
+/*header nav a {*/
+/*    margin-left: 20px;*/
+/*    font-weight: bold;*/
+/*    color: #033e6b;*/
+/*}*/
+
+/* ===== Header / Navbar Styling ===== */
+header {
+    width: 94%;
+    padding: 15px 40px;
+    background: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 3px solid #e5f2ff;
+}
+
+/* Logo Text */
+header .logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: #033e6b;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    max-width: 450px;
+    line-height: 1.2;
+    transition: 0.3s ease;
+}
+
+header .logo:hover {
+    transform: scale(1.05);
+}
+
+/* Navigation Links */
+header nav a {
+    margin-left: 30px;
+    text-decoration: none;
+    font-size: 17px;
+    color: #033e6b;
+    font-weight: 600;
+    transition: 0.3s;
+    padding-bottom: 5px;
+    border-bottom: 2px solid transparent;
+}
+
+/* Hover Effect */
+header nav a:hover {
+    color: #0275d8;
+    border-bottom: 2px solid #0275d8;
+}
+
+/* Active Page */
+header nav a.active {
+    color: #0275d8;
+    border-bottom: 2px solid #0275d8;
+}
+
+/* ===== Responsive for Small Screens ===== */
+@media (max-width: 780px) {
+    header {
+        padding: 15px 20px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header nav {
+        margin-top: 10px;
+    }
+
+    header nav a {
+        margin: 10px;
+        display: inline-block;
+    }
+
+    header .logo {
+        font-size: 20px;
+    }
+}
+
+
+/* PAGE HEADER */
+.program-header {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.program-header h1 {
+    font-size: 40px;
+}
+
+/* PROGRAM GRID */
+.program-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 40px 20px;
+    gap: 25px;
+}
+
+.program-box {
+    background: white;
+    width: 320px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.program-box img {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px 10px 0 0;
+    object-fit: cover;
+}
+
+.program-box h3 {
+    margin-top: 15px;
+    font-size: 22px;
+}
+
+.program-box p {
+    padding: 0 15px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    background: #4dabff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+}

@@ -1,0 +1,175 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f2f7ff;
+    color: #033e6b;
+}
+
+/* ===== Header / Navbar Styling ===== */
+.navbar {
+    width: 94%;
+    padding: 15px 40px;
+    background: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 3px solid #e5f2ff;
+}
+
+/* Logo Text */
+.navbar .logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: #033e6b;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: 0.3s ease;
+}
+
+.navbar .logo:hover {
+    transform: scale(1.05);
+}
+
+/* Navigation Links */
+.navbar nav a {
+    margin-left: 30px;
+    text-decoration: none;
+    font-size: 17px;
+    color: #033e6b;
+    font-weight: 600;
+    transition: 0.3s;
+    padding-bottom: 5px;
+    border-bottom: 2px solid transparent;
+}
+
+/* Hover Effect */
+.navbar nav a:hover {
+    color: #0275d8;
+    border-bottom: 2px solid #0275d8;
+}
+
+/* Active Page */
+.navbar nav a.active {
+    color: #0275d8;
+    border-bottom: 2px solid #0275d8;
+}
+
+/* ===== Responsive for Small Screens ===== */
+@media (max-width: 780px) {
+    .navbar {
+        padding: 15px 20px;
+    }
+
+    .navbar nav {
+        display: none; /* You can request a hamburger menu */
+    }
+
+    .navbar .logo {
+        font-size: 20px;
+    }
+}
+
+/* PAGE HEADER */
+.page-hero {
+    text-align: center;
+    padding: 60px 20px;
+    background: #cde2fb;
+}
+
+.page-hero h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+/* CONTENT SECTIONS */
+.content-section {
+    padding: 50px 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.content-section.light {
+    background: #e8f2ff;
+}
+
+.content-section h2 {
+    color: #0059b3;
+    margin-bottom: 15px;
+}
+
+.content-section ul {
+    padding-left: 20px;
+}
+
+/* VALUES GRID */
+.values-grid {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.value-box {
+    background: #b7dafc;
+    padding: 15px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+
+
+/* TEAM SECTION */
+.team-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+    justify-items: center;
+}
+
+/* Each team member card */
+.team-member {
+    width: 230px; /* bigger than before */
+    text-align: center;
+    background: #ffffff;
+    padding: 15px 10px;
+    border-radius: 12px;
+    box-shadow: 0 5px 18px rgba(0,0,0,0.1);
+    transition: 0.3s ease;
+}
+
+/* Hover animation */
+.team-member:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* Team member image */
+.team-member img {
+    width: 100%;
+    height: 250px;   /* bigger image height */
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 10px;
+}
+
+/* Names */
+.team-member h4 {
+    font-size: 18px;
+    color: #033e6b;
+    font-weight: 700;
+    margin: 8px 0 5px;
+}
+
+/* Role */
+.team-member p {
+    font-size: 14px;
+    color: #555;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
